@@ -1,14 +1,8 @@
-#print matrix
-r=int(input("enter the row: "))
-c=int(input("enter the column: "))
-matrix=[]
-for i in  range(r):
-    a=[]
-    for j in range(c):
-        k=int(input("Enter the element of the matrix: "))
-        a.append(k) 
-    matrix.append(a)
-for i in range(r):
-    for j in range(c):
-        print(matrix[i][j],end=" ")
-    print()    
+# print matrix
+n=int(input('Enter the number of row: '))
+m=[]
+for i in range(n):
+    k=list(map(int, input('Enter the row of matrix: ').split()))
+    m.append(k)
+for j in m:
+    print(*j)
