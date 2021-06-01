@@ -1,6 +1,3 @@
 #find the numnber is even or odd
-n=int(input("Enter thhe number: "))
-if n%2:
-    print("number is Odd")
-else:
-    print("number is even")
+n=int(input("Enter the number: "))
+print("Even") if n%2==0 else print('odd')
