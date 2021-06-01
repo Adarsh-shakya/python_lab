@@ -1,16 +1,13 @@
 #sum of two matrix 
-l=int(input('Enter the number of row: '))
+l=int(input('Enter the number of row for matrix: '))
 m=[]
 n=[]
 o=[]
-for x in range(2):
-    print('Enter the element for matrix')
+for x in ['A','B']:
+    print('Enter the element for matrix',x)
     for i in range(l):
-        k=list(map(int, input('Enter the row of matrix: ').split()))
-        if x==0:
-          m.append(k)
-        else:
-          n.append(k)
+        k=list(map(int, input(f'Enter the {i} row of matrix: ').split()))
+        m.append(k) if x=='A' else n.append(k)
 for j in range(l):
     s=[]
     for i in range(len(m[0])):
