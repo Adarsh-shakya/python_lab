@@ -1,0 +1,4 @@
+sum of 45 and 67 is 112
+sum of 34 and 56 is 90
+sum of 34 and 89 is 123
+sum of 34 and 56 is 90
